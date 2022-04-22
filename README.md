@@ -1,2 +1,4 @@
 # Curso de python
- Exercicios e projetos
+ Exercícios e projetos em python.
+
+ Reposiório para o curso.
