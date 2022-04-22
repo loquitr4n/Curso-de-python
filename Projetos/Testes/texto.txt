@@ -1,0 +1,5 @@
+{'notas': (8, 7, 5, 7), 'maior': 8, 'menor': 5, 'media': 6.75, 'situacao': 'REGULAR'}
+{'notas': (10, 5, 7, 9), 'maior': 10, 'menor': 5, 'media': 7.75, 'situacao': 'BOA'}
+{'notas': (6, 4, 3, 10), 'maior': 10, 'menor': 3, 'media': 5.75, 'situacao': 'REGULAR'}
+{'notas': (9, 3, 7, 10), 'maior': 10, 'menor': 3, 'media': 7.25, 'situacao': 'BOA'}
+{'notas': (5, 4, 2, 10), 'maior': 10, 'menor': 2, 'media': 5.25, 'situacao': 'REGULAR'}
