@@ -1,43 +1,57 @@
-import math
-
-
-class Point:
-    """
-    Representação de um ponto em um espaço 2D.
-    Atributos: x, y.
-    """
-
+class RemoteControl:
     def __init__(self):
-        self.x = None
-        self.y = None
+        self.vol = 0
+        self.energy = False
+        self.channel = 4.0
+        self.nf = False
 
-    def print_point(p):
-        print(f'({p.x}, {p.y})')
+    def power(self):
+        if not self.energy:
+            self.energy = True
+        else:
+            self.energy = False
 
-    def distancia_entre_pontos(p):
-        print(f'{p.y - p.x}')
+    def mais_canal(self, seta):
+        if self.energy:
+            self.channel += seta
+        else:
+            print('Ligue a TV.')
+
+    def menos_canal(self, seta):
+        if self.energy:
+            self.channel -= seta
+        else:
+            print('Ligue a TV.')
+
+    def mais_vol(self, seta):
+        if self.energy:
+            self.vol += seta
+        else:
+            print('Ligue a TV.')
+
+    def menos_vol(self, seta):
+        if self.energy:
+            self.vol -= seta
+        else:
+            print('Ligue a TV.')
+
+    def netflix(self):
+        if not self.nf:
+            self.nf = True
+            print('ABRINDO NETFLIX')
+        else:
+            self.nf = False
 
 
-blank = Point()
-blank.x = 3.0
-blank.y = 5.0
+if __name__ == '__main__':
+    televisao = RemoteControl()
+    televisao.power()
+    televisao.mais_canal(9)
+    televisao.menos_canal(2)
+    televisao.mais_vol(52)
+    televisao.menos_vol(20)
+    televisao.menos_canal(7)
+    televisao.netflix()
+    print(televisao.channel)
+    print(televisao.vol)
 
-# print(blank.x)
-# distancia = math.sqrt((blank.x ** 2 + blank.y ** 2))
-# print(distancia)
-blank.print_point()
-blank.distancia_entre_pontos()
-
-
-class Rectangle:
-    """Represents a rectangle.
-    attributes: width(largura), height(altura), corner(angulo).
-    """
-
-
-box = Rectangle()
-box.width = 100.0
-box.height = 200.0
-box.corner = Point()
-box.corner.x = 0.0
-box.corner.y = 0.0
