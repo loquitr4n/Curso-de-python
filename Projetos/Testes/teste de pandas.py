@@ -13,8 +13,15 @@ def media(bim):
     return media_do_bimestre
 
 
-print(f'{media("Primeiro bim")}'), print(f'{media("Segundo bim")}'), print(f'{media("Terceiro bim")}'), print(f'{media("Quarto bim")}')
+def main():
+    print(f'{media("Primeiro bim")}')
+    print(f'{media("Segundo bim")}')
+    print(f'{media("Terceiro bim")}')
+    print(f'{media("Quarto bim")}')
 
+
+if __name__ == '__main__':
+    main()
 # nomes = []
 # notas1 = []
 # notas2 = []
